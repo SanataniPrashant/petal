@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order & booking</title>
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+        }
+        fieldset{
+            border: 3px solid;
+           
+        }
+        form{
+        font-weight: bold;
+        }
+        input{
+            font-size: 18px;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            justify-content: center;
+            /* text-align: center; */
+            padding: 10px;
+            margin: 40px;
+            background:linear-gradient(pink,yellow,green);
+        }
+    </style>
+</head>
+<body>
+    <!-- <form action="">
+        <fieldset>
+            <legend>This is a form</legend>
+        <label for="name">Name</label>
+        <input type="text" name="" id="name"><br><br>
+        <label for="gender">Gender :</label>
+        <input type="radio" name="karan" id="name">Male
+        <input type="radio" name="karan" id="name">Female <br><br>
+        <label for="country">Country:</label>
+        <select name="city" id="country">
+        <option value="Select an option">Select an option</option>
+        <option value="Austrlia">Austrlia</option>
+
+         <option value="USA">USA</option>
+         <option value="nepal">Nepal</option>
+
+
+        </select>
+        <br><br>
+        <label for="message">Message:</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+        <input type="checkbox">
+        <label for=""> Subscribe?</label> <br><br>
+        <button>Submit</button><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gen" >Male
+        <input type="radio" name="gen" >Female
+    </fieldset>
+
+ 
+    </form> -->
+    <h1>Order & Booking Form</h1>
+    <form action="info.php" method="post">
+        <fieldset><legend>Order & Booking Form</legend>
+            <label for="name">Name</label>
+        <!-- <input type="text" class="box" placeholder="Name"> -->
+        <input type="name" name="name" class="box" placeholder="Your Name " required><br><br>
+
+
+        <!-- <input type="email" class="box" placeholder="Email"> -->
+        <label for="name">Email</label>
+
+        <input type="email" name="email"class="box" placeholder="Your Email " required><br><br>
+
+        <!-- <input type="number" class="box" placeholder="Number"> -->
+        <label for="name">Mob No.</label>
+
+        <input type="number"  class="box" name="phone" placeholder="your Mobile Number" required><br><br>
+       
+        <h3>Select The flowers</h3>
+        <select name="select" id="select" name="city"class="select" >
+
+            
+            <option value="Select an option">Select The flowers</option>
+            <option value="Rose">Rose</option>
+    
+             <option value="Lotous">Lotous</option>
+             <option value="Sunflower">Sunflower</option>
+    
+    
+            </select>
+            <br><br>
+
+        <!-- <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea> -->
+        <textarea name="message" id="" cols="35"  rows="10" class="box"  placeholder="Give the information about The flower:like Quantity and so... " required></textarea><br><br>
+        <!-- <input type="number"  class="box" name="phone" placeholder=" Number of Quantity" required> -->
+
+        </textarea>
+
+        <!-- <input type="submit" value="send massage" class="btn"> -->
+        <input type="submit" value="Send Message" class="btn" required>
+    </fieldset>
+
+    </form>
+</body>
+</html>
